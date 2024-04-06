@@ -56,3 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+function highlightElement(elementId) {
+  var element = document.getElementById(elementId);
+  element.classList.add('highlight'); // 添加高亮类
+
+  setTimeout(function () {
+    element.classList.remove('highlight'); // 移除高亮类
+  }, 5000); // 2秒后移除高亮类
+}
