@@ -24,6 +24,7 @@ function performSearch() {
 document.addEventListener('DOMContentLoaded', function () {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     document.querySelector('.grid-container2').classList.add('mobile-disable');
+    this.body.style.filter = "unset";
   }
   customElements.define('text-box', class extends HTMLElement {
     constructor() {

@@ -23,12 +23,12 @@ body {
   font-size: 16px;
   font-family: font;
   line-height: 1.1145141919810;
-  filter: blur(2px);
+  filter: brightness(75%) blur(1px);
   transition: filter 1s;
 }
 
 body:hover {
-  filter: blur(0px);
+  filter: brightness(100%) blur(0px);
 }
 
 a {
